@@ -1,0 +1,94 @@
+/************************************************************************* Universal */
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+/************************************************************************* Navigation */
+/*custom logo in navbar*/
+.navbar-brand {
+    padding: 0px;
+}
+/*Adds a box shadow to the navbar*/
+.navbar {
+    box-shadow: 0 8px 5px -6px  #737373
+    ;
+}
+
+/************************************************************************* Jumbotron */
+/*Customizes the Jumbotron*/
+.jumbotron {
+    background: url("../pictures/programming.jpeg") center no-repeat;
+    color: white;
+    height: 600px;
+    border-radius: 0;
+    position: relative;
+}
+
+/*Sets the family photo to overlap the Jumbotron and Skills section*/
+.familyphoto {
+    width: 300px; 
+    height: auto; 
+    border-radius: 50%; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+    bottom: -150px;
+    transition: 0.4s;
+}
+
+/************************************************************************* Skills */
+/*Custom hover animations for logos*/
+.fa-code {
+    transition: .3s;
+}
+.fa-code:hover {
+    transform: scale(1.3);
+    color: #ffc107;
+}
+
+.fa-pencil-alt {
+    transition: all .5s ease-in-out;
+}
+.fa-pencil-alt:hover {
+    transform: scale(1.3)rotate(360deg);
+    color: #ffc107;
+}
+
+/************************************************************************* About Me */
+/* Create polygon effect for div background */
+.aboutme {
+    height: 600px;
+    background: #d9d9d9;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 91%);
+}
+/* Removes polygon because text overflows */
+@media (max-width: 1161px) {
+    .aboutme {
+    clip-path: none;
+    height: auto;
+    }
+}
+    
+/************************************************************************* Media Queries */
+/*These media queries keep the absolutely position photo looking good*/
+@media (max-width: 1022px) {
+    .familyphoto {
+        width: 200px;
+        bottom: 40px;
+    }
+}
+
+@media (max-width: 595px) {
+    .familyphoto {
+        width: 140px;
+        bottom: -70px;
+        background-position: top;
+    }
+}
+
+
+
+
