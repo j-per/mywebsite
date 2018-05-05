@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Miles Converter</title>
+        <meta charset="UTF-8"> 
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">   
+        <style>
+        body{
+            background: gray;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            font-size: 2em;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto auto repeat(3, 150px);
+            color: black;
+        }
+        .converter {
+            text-transform: uppercase;
+        }
+        input {
+            border-radius: 10px;
+            width: 30%;
+            padding: 12px 20px;
+            font-family: sans-serif;
+            border: 2px solid;
+            box-sizing: border-box;
+            font-size: 0.6em;
+        }
+        h1 {
+            text-decoration: underline overline;
+        }
+        #feet,
+        #yards,
+        #inches {
+            background-color: white;
+            margin-left: 36%;
+            margin-right: 36%;
+            border-radius: 10px;
+            margin-top: 10px; 
+            font-size: .7em;
+            text-align: left;
+            padding-left: 20px;
+            border: 2px solid;
+        }
+        #feet {
+            background-color: lightseagreen;
+        }
+        #yards {
+            background-color: lightskyblue;
+        }
+        #inches {
+            background-color: firebrick;
+        }
+        </style>
+    </head>
+    <body>
+        <div class=container>
+            <h2 class="converter">Miles Conversion Tool</h2>
+            <form>
+                <input id="milesInput" type="number" placeholder="Enter Miles Here...">
+            </form>
+            <div id="feet">
+                <h4>Feet:</h4>
+                <div id="feetOutput"></div>
+            </div>
+            <div id="yards">
+                <h4>Yards:</h4>
+                <div id="yardsOutput"></div>
+            </div>
+            <div id="inches">
+                <h4>Inches:</h4>
+                <div id="inchesOutput"></div>
+            </div>
+
+        </div>
+        <script>
+            document.getElementById('milesInput').addEventListener('input', function(e) {
+            var feet = e.target.value;
+            document.getElementById('feetOutput').innerHTML = feet * 5280;
+        });
+        
+        document.getElementById('milesInput').addEventListener('input', function(e) {
+            var yards = e.target.value;
+            document.getElementById('yardsOutput').innerHTML = yards * 1760;
+        });
+
+        document.getElementById('milesInput').addEventListener('input', function(e) {
+            var inches = e.target.value;
+            document.getElementById('inchesOutput').innerHTML = inches * 63360;
+        });
+        </script>
+    </body>
+</html>

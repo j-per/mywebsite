@@ -1,10 +1,16 @@
 /************************************************************************* Universal */
-
+* {
+    scroll-behavior: smooth;
+}
 p {
     font-size: 18px;
     line-height: 1.8;
     letter-spacing: 0.5px;
 }
+.btn-round-lg {
+    border-radius: 22.5px;
+}
+
 /************************************************************************* Navigation */
 /*custom logo in navbar*/
 .navbar-brand {
@@ -19,11 +25,12 @@ p {
 /************************************************************************* Jumbotron */
 /*Customizes the Jumbotron*/
 .jumbotron {
-    background: url("../pictures/programming.jpeg") center no-repeat;
-    color: white;
-    height: 600px;
+    background: url("../pictures/programming.jpeg") no-repeat center;  /*This photo was taken from https://www.pexels.com/.*/
+    color: white;                                             /* All photos on this site are free for any personal */
+    height: 600px;                                              /* and commercial purpose per their license: */
+    position: relative;                                         /*https://www.pexels.com/photo-license/*/
     border-radius: 0;
-    position: relative;
+
 }
 
 /*Sets the family photo to overlap the Jumbotron and Skills section*/
@@ -39,7 +46,7 @@ p {
     transition: 0.4s;
 }
 
-/************************************************************************* Skills */
+/************************************************************************* Informational */
 /*Custom hover animations for logos*/
 .fa-code {
     transition: .3s;
@@ -62,7 +69,8 @@ p {
 .aboutme {
     height: 600px;
     background: #d9d9d9;
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 91%);
+    clip-path: polygon(0 10%, 100% 5%, 100% 80%, 0 76%);
+
 }
 /* Removes polygon because text overflows */
 @media (max-width: 1161px) {
@@ -71,7 +79,44 @@ p {
     height: auto;
     }
 }
-    
+@media (min-width: 2000px) {
+    .aboutme {
+    clip-path: none;
+    height: auto;
+    }
+}
+
+/************************************************************************* Portfolio */
+.jslogo {
+    transition: 0.7s;
+}
+.jslogo:hover {
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+
+/************************************************************************* Skills */
+/* Create polygon effect for div background */
+.skills {
+    height: 550px;
+    background: #d9d9d9;
+    clip-path: polygon(0 10%, 100% 5%, 100% 95%, 0 91%);
+}
+
+/* Removes polygon because text overflows */
+@media (max-width: 1161px) {
+    .skills {
+    clip-path: none;
+    height: auto;
+    }
+}
+@media (min-width: 2000px) {
+    .aboutme {
+    clip-path: none;
+    height: auto;
+    }
+}
+
 /************************************************************************* Media Queries */
 /*These media queries keep the absolutely position photo looking good*/
 @media (max-width: 1022px) {
@@ -81,13 +126,17 @@ p {
     }
 }
 
-@media (max-width: 595px) {
+@media (max-width: 649px) {
     .familyphoto {
-        width: 140px;
-        bottom: -70px;
+        width: 170px;
+        bottom: -75px;
         background-position: top;
     }
 }
+
+
+
+
 
 
 

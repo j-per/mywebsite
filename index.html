@@ -1,95 +1,187 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!--Font awesome icons are used on this page and are free for commercial or open source projects
+      per their license https://fontawesome.com/license-->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Google Font-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <title>Hello, world!</title>
+    <title>Jesse Perdue</title>
   </head>
   <body>
     <!--Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-0">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link pr-5" href="#">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pr-5" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                  <a class="nav-link pr-5" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pr-5" href="#">Contact</a>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-white py-0">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto smooth-scroll">
+          <li class="nav-item">
+              <a class="nav-link pr-5" href="#Aboutme">About</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link pr-5" href="#Portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link pr-5" href="#Skills">Skills</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link pr-5" href="#Contact">Contact</a>
           </li>
         </ul>
-        </div>
-      </nav>
+      </div>
+    </nav>
     <!--/Navigation -->
 
     <!--Jumbotron -->
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center mb-5">
       <div class="containter py-5 align-items-center">
         <h1 class="display-1">Jesse Perdue</h1>
-        <p class="lead">Web Developer</p>
-        <a class="btn btn-warning btn-sm mt-5" href="#" role="button">Learn more</a>
-        <img src="pictures/jesse.jpg" alt="Jesse's Family" class="familyphoto">
+        <p class="lead">Jr. Web Developer</p>
+        <a class="btn btn-warning btn-round-lg" href="#Aboutme" role="button">Learn more</a>
+        <img src="pictures/cartoonjesse2.jpg" alt="Jesse's Family" class="familyphoto">
       </div>
     </div> <!--/Jumbotron -->
 
-    <!-- Skills -->
+    <!-- Informational -->
     <div class="container-fluid text-center mb-5">
       <div class="row">
         <div class="col-md">
           <h1 class="pt-5">Programmer</h1>
           <i class="fas fa-code fa-7x py-5"></i>
-          <p class="px-5 pb-5 skills">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p class="px-2 pb-5">
+            I am currently focusing my efforts in vanilla JavaScript and still consider myself a beginner. I love learning all about the different capablities
+            that the language offers. My goal in the next 3 months is to start learning a framework and I am still trying to decide if I want
+            to take the React or Angular path. I also want to learn PHP. I am currently working on a shopping cart JavaScript application that incorporates a lot of the 
+            different things I have been learning. 
+          </p>
         </div>
         <div class="col-md">
           <h1 class="pt-5">Designer</h1>
           <i class="fas fa-pencil-alt fa-7x py-5"></i>
-          <p class="px-5 pb-5 skills">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p class="px-2 pb-5">
+            When I was a sophmore in high school, I took a graphic design class and it sparked something inside me that I did not know was there.   
+            Things changed as I got older, but the passion I had for creating an awesome experience for others did not. Web development has
+            allowed me to re-ignite the flame and this site is just an example of the many layout ideas I have. UI and UX are crucial on any website
+            now days and my creativity allows me to build stunning websites.
+
+          </p>
         </div>
       </div>
 
     </div>
-    <!-- /Skills -->
+    <!-- /Informational -->
 
-    <!-- About Me -->
-    
-      
-    <div class="container-fluid mt-5 mb-0 aboutme">
+    <!-- About Me -->  
+    <div class="container-fluid mt-5 mb-0 aboutme" id="Aboutme">
       <div class="row">
         <div class="col-12 text-center p-5">
-          <h1 class="display-3 pt-5">About Me</h1>
+          <h1 class="display-5 pt-5">A little bit about me...</h1>
         </div>
       </div>
-          <div class="col-sm-8 mx-auto mb-0">
-            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          <div class="col-sm-8 mx-auto mb-0 pb-5 text-center">
+            <p>
+              My name is Jesse Perdue. I have been working in IT for the past 4 years and have recently found my niche in this giant industry. I have always dreamed
+              of building and creating things from my imagination and front end web development is the perfect place to pursue
+              those dreams. My passion for technology, connecting with people and creatvity is what started my journey on the path to
+              becoming a full stack developer. In my free time I love spending time with my family, watching sports or grabbing a drink
+              with my friends. If I'm not spending time doing that, you'll probably find me studying some sort of new web technology.
             </p>
           </div>
         </div>
       </div>
     </div>
+    <!-- /About Me --> 
 
+    <!-- Portfolio -->
+    <div class="container-fluid mb-5" id="Portfolio">
+      <div class="row">
+        <div class="col-12 text-center p-5">
+            <h1 class="display-3">Portfolio</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md text-center">
+          <h2 class="pt-0">Kims Kakes</h2>
+          <p class="px-2 mb-5">
+            This is a site I built for a family friend. She runs a cake business so I needed to come up with some sort of way that allowed her to update the content
+            without having her touch the code. This project introduced me to the need for CMS. I built the site using Wordpress.
+          </p>
+          <img src="pictures/kimskakesfinal.jpg" alt="Kims Kakes Website on Laptop" class="w-50 mb-5 d-block mx-auto">
+          <a href="http://kimskakessandiego.com/" target="_blank"><button type="button" class="btn btn-secondary btn-round-lg mb-5">Click Here</button></a>
+        </div>
+        <div class="col-md  text-center">
+          <h2 class="pt-0">Mileage Converter</h2>
+          <p class="px-2 mb-5">
+            This was a very simply web application I built using JavaScript. It converts miles to feet, yards, and inches. One of my learning strategies is creating
+            small web apps as I learn. I believe that these "small wins" are exciting and inspiring for any new developer. 
+          </p>
+          <img src="pictures/JavaScript-logo.png" alt="JavasScript Logo" class="w-25 jslogo d-block mx-auto" style="border: 5px solid #343a40;"> <!--This image was taken from Goolge Advanced Search with "free to use, share, or modify, even commercially" as a filter.--> 
+          <a href="mileconverter.html" target="_blank"><button type="button" class="btn btn-secondary btn-round-lg mt-5">Click Here</button></a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Portfolio -->
+
+    <!-- Skills -->
+    <div class="container-fluid skills" id="Skills">
+      <div class="row">
+        <div class="col-12 text-center p-5">
+          <h1 class="display-3 pt-5">Skills</h1>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md">
+          <i class="fab fa-html5 fa-7x py-3"></i>
+          <h6 class="pb-5">HTML</h6>
+        </div>
+        <div class="col-md">
+          <i class="fab fa-css3-alt fa-7x py-3"></i>
+          <h6 class="pb-5">CSS</h6>
+        </div>
+        <div class="col-md">
+          <i class="fab fa-js-square fa-7x py-3"></i>
+          <h6 class="pb-5">JavaScript</h6>
+        </div>
+        <div class="col-md">
+          <i class="fab fa-wordpress-simple fa-7x py-3"></i>
+          <h6 class="pb-5">Wordpress</h6>
+        </div>
+      </div>
+    </div>
+    <!-- /Skills -->
+
+    <!-- Contact -->
+    <div class="container-fluid pb-5" id="Contact">
+      <div class="row">
+        <div class="col-12 text-center p-5">
+          <h1 class="display-4 py-5">Interested in working with me?</h1>
+          <a href="contact.html" target="_blank"><button type="button" class="btn btn-warning btn-lg btn-round-lg">Contact Me</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- /Contact -->
+
+    <!-- Footer -->
+    <div class="container-fluid footer" style="background: #ffc107;">
+      <div class="row">
+        <div class="col-12 text-center mt-5">
+          <p class="lead">Stay Hungry</p>
+          <p class="pb-3">Self Made &copyJessePerdue</p>
+          <a href="https://twitter.com/jesse90perdue" target="_blank" style="color:black;"><i class="fab fa-twitter fa-2x px-2"></i></a>
+          <a href="https://github.com/j-per" target="_blank" style="color:black;"><i class="fab fa-github fa-2x px-2"></i></a>
+        </div>
+      </div>
+    </div>
   
-
-
+    <!-- /Footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
